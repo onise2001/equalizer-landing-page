@@ -1,0 +1,300 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fcfaf9;
+  background: url("./assets/bg-main-mobile.png");
+  background-repeat: no-repeat;
+  background-position: left 10px top -250px;
+  padding: 40px 24px 0;
+}
+
+header {
+  margin-bottom: 166px;
+  max-width: 375px;
+}
+
+header h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  line-height: 1.2;
+  letter-spacing: -0.46px;
+  color: #191826;
+  margin: 64px 0 20px;
+}
+
+header p {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: #191826;
+}
+
+main {
+  background-image: url("./assets/bg-pattern-2.svg");
+  background-color: #191826;
+  background-repeat: no-repeat;
+  background-position: center top -30px;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 375px;
+}
+
+.phone-image {
+  max-width: 209px;
+  max-height: 430px;
+  position: absolute;
+  margin-bottom: 20px;
+  top: -98px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+main div {
+  padding: 48px 36px;
+  height: 546px;
+  width: 375px;
+  color: #fcfaf9;
+  border-radius: 12px;
+  background-color: #fa7453;
+  position: absolute;
+  bottom: -333px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+main div h2 {
+  font-size: 3.2rem;
+  font-weight: bold;
+  line-height: 1.25;
+}
+
+main div p {
+  font-size: 1.8rem;
+  line-height: 1.56;
+  margin-top: 12px;
+}
+
+.price {
+  font-size: 6.5rem;
+  font-weight: bold;
+  line-height: 0.8;
+  margin-top: 36px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.price span {
+  line-height: 1.6;
+  letter-spacing: -0.2px;
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+button {
+  all: unset;
+  max-width: 100%;
+  border-radius: 12px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 1.78;
+  letter-spacing: -0.18px;
+  font-family: "IBM Plex Sans";
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7.8px;
+}
+
+.ios-button {
+  color: #fcfaf9;
+  background-color: #191826;
+  margin: 32px 0 16px 6px;
+  padding: 15px 77px 14px;
+}
+
+.ios-button img {
+  width: 17.1px;
+  height: 15.3px;
+}
+
+.android-button {
+  color: #191826;
+  background-color: #fcfaf9;
+  margin: 0px 0 0 6px;
+  padding: 15px 58.5px 14px 59px;
+}
+
+footer {
+  margin-top: 400px;
+  padding: 0 24px 80px;
+}
+
+footer p {
+  font-size: 1.6rem;
+  line-height: 1.63;
+  color: #191826;
+}
+
+.footer-wrapper {
+  margin-top: 32px;
+}
+
+.footer-paragraph {
+  width: 327px;
+}
+.icons {
+  margin-top: 64px;
+  display: flex;
+  gap: 20px;
+}
+
+footer p span {
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  body {
+    background: url("./assets/bg-pattern-1.svg"),
+      url("./assets/bg-main-tablet.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position: top -50px right -50px, top -200px right -200px;
+    padding: 0 39px 85px 33px;
+  }
+  header {
+    max-width: 768px;
+    padding: 40px 215px 50px 39px;
+    height: 696px;
+  }
+
+  header h1 {
+    font-size: 6.4rem;
+    font-weight: bold;
+    letter-spacing: -0.73px;
+    line-height: 1;
+    margin: 95px 0 28px;
+    width: 15ch;
+  }
+  header p {
+    font-size: 18px;
+    line-height: 1.56;
+    width: 49ch;
+  }
+
+  main {
+    width: 696px;
+  }
+
+  .phone-image {
+    top: -50px;
+    left: 205px;
+  }
+
+  main div {
+    top: 170px;
+    left: 420px;
+  }
+
+  footer {
+    margin-top: 187px;
+  }
+
+  .icons {
+    margin: 0;
+  }
+  .footer-paragraph {
+    width: 366px;
+  }
+
+  .footer-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 230px;
+  }
+}
+
+@media (min-width: 1440px) {
+  body {
+    padding: 62px 165px 0;
+    background: url("./assets/bg-pattern-1.svg"),
+      url("./assets/bg-main-desktop.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position: right top, left -300px top -200px;
+  }
+  header {
+    max-width: 1440px;
+    padding: 0;
+  }
+
+  header h1 {
+    font-size: 8.8rem;
+    letter-spacing: -1px;
+    font-weight: bold;
+    width: 20ch;
+  }
+
+  header p {
+    font-size: 2rem;
+    line-height: 1.7;
+    width: 69ch;
+  }
+
+  main {
+    width: 1110px;
+  }
+
+  .phone-image {
+    top: -140px;
+    left: 370px;
+  }
+
+  main div {
+    top: 100px;
+    left: 820px;
+  }
+  .ios-button {
+    padding: 15px 75px 14px;
+  }
+
+  .ios-button:active,
+  .ios-button:hover {
+    background-color: #66e2dc;
+  }
+
+  .android-button {
+    padding: 15px 58px 14px;
+  }
+
+  .android-button:active,
+  .android-button:hover {
+    background-color: #ffb964;
+  }
+
+  footer {
+    width: 1110px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer-logo {
+    width: 146.1px;
+    height: 32px;
+  }
+}
